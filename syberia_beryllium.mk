@@ -6,17 +6,16 @@
 
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
-# Inherit some common Xtended stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+# Inherit some common syberia  stuff.
+$(call inherit-product, vendor/syberia/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := xtended_beryllium
+PRODUCT_NAME := syberia_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Poco F1
 PRODUCT_MANUFACTURER := Xiaomi
 
-XTENDED_BUILD_TYPE := OFFICIAL
 
 BUILD_FINGERPRINT := "Xiaomi/beryllium/beryllium:9/PKQ1.180729.001/V10.1.3.0.PEJMIFI:user/release-keys"
 
